@@ -1,0 +1,5 @@
+feature_set,n_features,auc_mean,auc_sd,balanced_accuracy
+TP53 only,1,0.796,0.017,0.796
+Gene,150,0.852,0.012,0.796
+Gene x class,180,0.85,0.011,0.794
+Gene x class + hotspot,203,0.847,0.012,0.795
