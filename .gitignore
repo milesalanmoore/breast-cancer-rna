@@ -1,0 +1,8 @@
+# pixi environments
+.pixi/*
+!.pixi/config.toml
+# downloaded data (re-create with `pixi run download`)
+data/
+# OS / Python clutter
+.DS_Store
+__pycache__/
