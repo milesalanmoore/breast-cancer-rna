@@ -1,0 +1,11 @@
+name: breast-cancer-rna
+channels:
+  - conda-forge
+dependencies:
+  - python=3.14
+  - kaggle>=2.2.4
+  - matplotlib>=3.11
+  - numpy>=2.5
+  - pandas>=3.0
+  - scikit-learn>=1.9
+  - pycodestyle

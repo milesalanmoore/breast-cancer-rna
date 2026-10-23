@@ -1,0 +1,21 @@
+[workspace]
+authors = ["Miles Moore <79930428+milesalanmoore@users.noreply.github.com>"]
+channels = ["conda-forge"]
+name = "breast-cancer-rna-assignment"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+download = "bash download_data.sh"
+analyze = "python src/er_mutation_analysis.py --data_file data/METABRIC_RNA_Mutation.csv --out_dir results"
+style = "pycodestyle src/"
+
+[dependencies]
+python = "3.14.*"
+kaggle = ">=2.2.4,<3"
+matplotlib = ">=3.11.2,<4"
+numpy = ">=2.5.4,<3"
+pandas = ">=3.0.6,<4"
+scikit-learn = ">=1.9.1,<2"
+ipykernel = ">=7.4.0,<8"
+pycodestyle = ">=2.15.0,<3"
